@@ -25,7 +25,7 @@ stages{
    stage('Build on Test Env')
    {
    when{   // keyword for if  
-    expression{params.ENV == "Dev"}  // condition to be satisfied 
+    expression{params.ENV == "Test"}  // condition to be satisfied 
    }
    steps{
    git 'https://github.com/Sonal0409/DevOpsCodeDemo.git'
